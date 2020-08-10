@@ -1,8 +1,3 @@
-<?php
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -69,13 +64,12 @@ body {
 </head>
 <body class=text-center style="background-color:RGB(0,59,113); ">
 
-<form  class="form-login" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF]"); ?>" method="post">
+<form class="form-login" action="/Login script.php">
       <img class="mb-4" src="https://trello-attachments.s3.amazonaws.com/5e9e6fdc520e1b611ee21c4a/5e9e701b1a515133975fac74/badf30ca6379893747dfbe252122932e/image.png" alt="" width="72" height="72">
-      
-      <label >Username</label>
-      <input type="username" id="inputUsername" class="form-control" placeholder="Username" required="" autofocus="" value= "<?php echo $username; ?>" >
+      <label for="inputUsername" class="sr-only">Username</label>
+      <input type="username" id="inputUsername" class="form-control" placeholder="Username" required="" autofocus="">
       <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" value="<?php echo $password; ?>">
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" >
       <div class="checkbox mb-3">
         <label>
           <input type="checkbox" value="remember-me"> Remember me
