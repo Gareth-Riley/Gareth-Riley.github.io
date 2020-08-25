@@ -220,21 +220,33 @@ body {
     <!-- /.container -->
   </footer>
 
-<?php
-$loggedin = $_SESSSION['loggedin'];
-$username = $_SESSION['username'];
 
-
-?>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script>
-    var loginStatus='<?php echo $loggedin; ?>';
-    if (loginStatus==true)
+function getCookie(c_name) {
+    if (document.cookie.length > 0) {
+        c_start = document.cookie.indexOf(c_name + "=");
+        if (c_start != -1) {
+            c_start = c_start + c_name.length + 1;
+            c_end = document.cookie.indexOf(";", c_start);
+            if (c_end == -1) c_end = document.cookie.length;
+            return unescape(document.cookie.substring(c_start, c_end));
+        }
+    }
+    return "";
+}
+
+
+
+    var username = getCookie("username");
+    if (username!=null)
     {
-    var username = '<?php echo $username; ?>';
+      console.log("Success");
+      console.log(username);
+      console.log(document.cookie)
     document.getElementById("LoginButton").value=username;
   }
 

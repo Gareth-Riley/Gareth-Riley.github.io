@@ -21,6 +21,20 @@ li
   color: #0645AD;
   cursor: pointer;
 }
+.project-post
+{
+margin-bottom: 4rem;
+}
+.project-post-title
+{
+margin-bottom: .25rem;
+font-size: 2.5rem;
+}
+.project-post-meta
+{
+margin-bottom: 1.25rem;
+color: #999;
+}
 </style>
 </head>
 
@@ -71,41 +85,41 @@ li
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Project Name
+    <h1 class="mt-4 mb-3" style="text-align: center;">Project Name
     </h1>
 
 
 
     <!-- Content Row -->
-    <div class="row">
+<div class="row">
       <!-- Sidebar Column -->
-      <div class="col-lg-2 mb-3">
+  <aside class="col-md-4 ">
         <div class="list-group">
           <h4 class="list-group-item">Members</h4>
 
           <div href="index.html" class="list-group-item">
-            <img class=img-fluid src="http://placehold.it/700x400"></img>
+            <img class=card-img-top flex-auto d-none d-md-block src="http://placehold.it/700x400"></img>
            <a href="Example Member.html">Joel Harman</a>
           </div>
 
           <div href="index.html" class="list-group-item">
-            <img class=img-fluid src="http://placehold.it/700x400"></img>
+            <img class=card-img-top flex-auto d-none d-md-block src="http://placehold.it/700x400"></img>
            <a href="index.html">Placeholder 2</a>
           </div>
 
           <div href="index.html" class="list-group-item">
-            <img class=img-fluid src="http://placehold.it/700x400"></img>
+            <img class=card-img-top flex-auto d-none d-md-block src="http://placehold.it/700x400"></img>
            <a href="index.html">Placeholder 3</a>
           </div>
-
+ 
            <div href="index.html" class="list-group-item">
-            <img class=img-fluid src="http://placehold.it/700x400"></img>
+            <img class=card-img-top flex-auto d-none d-md-block src="http://placehold.it/700x400"></img>
            <a href="index.html">Placeholder 4</a>
           </div>
   
         </div>
           <ul class="list-group list-group-tem-flush">
-            <li href="" class="list-group-item">First item <a></a></li>
+            <li href="" class="list-group-item" Style="text-align:center;">Downloads </li>
   <li href=""class="list-group-item">Second item</li>
   <li href=""class="list-group-item">Third item</li>
   <li href=""class="list-group-item">Fourth item</li>
@@ -114,13 +128,38 @@ li
   <li href=""class="list-group-item">Seventh item</li>
   <li href=""class="list-group-item">Eighth item</li>
 </ul>
-      </div>
+</aside>
       <!-- Content Column -->
-      <div class="col-lg-10 mb-5">
-        <h2>Section Heading</h2>
-        <p>Add any project Text in here</p>
-        <div class="py-5 bg=image-full">
-          Put an image in here
+      <div class="col-md-8 blog-main">
+        <div class="project-post">
+          <h2 class="project-update-title">
+            This is the project paragprah heading
+          </h2>
+          <p class=project-post-meta>
+            date/time and author
+          </p>
+          <p>
+            This section is used for a synopsis on details about the project as well as any information regarding to the update
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <hr>
+          <p>
+            Second paragraph
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <h2>
+            Heading
+          </h2>
+          <hr>
+          <h3>
+            Sub Heading
+          </h3>
+          <img class=flex-auto d-none d-md-block src="http://placehold.it/700x400">
+        </img>
+      </div>
+
+
+        </div>
         </div>
       </div>
     </div>

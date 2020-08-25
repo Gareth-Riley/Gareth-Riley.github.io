@@ -1,14 +1,17 @@
 <?php
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'LoginUser');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'AR-QUT-DATABASE');
- 
+$user = 'root';
+$password = 'root';
+$db = 'ar-qut-database';
+$host = 'localhost';
+$port = 3306;
 
-$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
- 
-
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
+$link = mysqli_init();
+$success = mysqli_real_connect(
+   $link, 
+   $host, 
+   $user, 
+   $password, 
+   $db,
+   $port
+);
 ?>
