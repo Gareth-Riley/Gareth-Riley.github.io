@@ -242,12 +242,12 @@ function getCookie(c_name) {
 
 
     var username = getCookie("username");
-    if (username!=null)
+    if (document.cookie.indexOf('username')!=-1)
     {
       console.log("Success");
       console.log(username);
       console.log(document.cookie)
-    document.getElementById("LoginButton").value=username;
+    document.getElementById("LoginButton").innerHTML=username;
   }
 
   </script>

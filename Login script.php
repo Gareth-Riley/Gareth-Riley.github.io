@@ -47,7 +47,7 @@ if(empty($username_err) && empty($password_err)){
                             setcookie("email",$email,time()+ (30*24*60*60), "/");
 
                             
-                            header("location: index.html");
+                            header("location: index.php");
                         } else{
                             $password_err = "The password you entered was not valid.";
                         }

@@ -1,10 +1,9 @@
 <?php
-session_start();
+
+ setcookie("username","",time()-3600);
+ setcookie("discord","",time()-3600);
+ setcookie("email","",time()-3600);
  
-$_SESSION = array();
- 
-session_destroy();
- 
-header("location: index.html");
+header("location: index.php");
 exit;
 ?>
