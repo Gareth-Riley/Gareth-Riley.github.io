@@ -5,17 +5,12 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
   <title>Home</title>
-
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
 <style>
 body {
   padding-top: 56px;
 }
-
 .carousel-item {
   height: 65vh;
   min-height: 300px;
@@ -25,18 +20,12 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-
 .portfolio-item {
   margin-bottom: 30px;
 }
-
 </style>
-
-
 </head>
-
 <body>
-
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color: #00407a;">
     <div class="container">
@@ -48,11 +37,9 @@ body {
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
-
           <li class="nav-item">
             <a class="nav-link" href="News.html">News</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
@@ -70,14 +57,11 @@ body {
                     <li class="nav-item">
             <a class="nav-link" href="New Start.html">New to AR?</a>
           </li>
-
-
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
   <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -122,20 +106,16 @@ body {
       </a>
     </div>
   </header>
-
   <!-- Page Content -->
   <div class="container">
-
    
     <!-- /.row -->
-
     <!-- Portfolio Section -->
     <br>
     <br>
     <br>
     <br>
     <h2 style="text-align: center;">Recent news</h2>
-
     <div class="row">
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
@@ -205,13 +185,10 @@ body {
       </div>
     </div>
     <!-- /.row -->
-
     
-
     <hr>
  </div>
     
-
   <!-- Footer -->
  <footer class="py-5 " style="background-color: #00407a;">
     <div class="container">
@@ -219,9 +196,6 @@ body {
     </div>
     <!-- /.container -->
   </footer>
-
-
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -238,20 +212,14 @@ function getCookie(c_name) {
     }
     return "";
 }
-
-
-
     var username = getCookie("username");
     if (document.cookie.indexOf('username')!=-1)
     {
       console.log("Success");
       console.log(username);
       console.log(document.cookie)
-    document.getElementById("LoginButton").innerHTML=username;
+    document.getElementById("LoginButton").innerHTML="Currently logged in as: "+username;
   }
-
   </script>
-
 </body>
-
 </html>
