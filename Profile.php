@@ -8,11 +8,7 @@ if(empty(trim($_POST["password"]))){
 } else{
     $password = trim($_POST["password"]);
 }
-if(empty(trim($_POST["discord"]))){
-    $disc_err = "Please enter your Discord ID.";
-} else{
-    $discord = trim($_POST["discord"]);
-}
+
 $username = $_COOKIE["username"];
 if(empty($discord_err) && empty($password_err)){
         
@@ -141,24 +137,25 @@ body {
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color: #00407a;">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top" style="background-color: #00407a;">
     <div class="container">
-      <a class="navbar-brand" id=LoginButton href="Login script.php">Login</a>
+      <a class="navbar-brand " href="index.html">Augmented Sociality</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-
+            
+              <li class="nav-item">
+            <a class="nav-link" href="New Start.html">New to AR?</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="News.html">News</a>
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <li class="nav-item">
+            <a class="nav-link" href="Teams.html">Teams</a>
           </li>
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Projects
@@ -171,7 +168,10 @@ body {
             </div>
           </li>
                     <li class="nav-item">
-            <a class="nav-link" href="New Start.html">New to AR?</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
           </li>
 
 
@@ -231,18 +231,16 @@ body {
 
 
 <form class="form-login" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" class="form-control" name="password" placeholder="password">
-      <span class="help-block"><?php echo $password_err; ?></span>
-      <label for="DiscordID" class="sr-only">DiscordID</label>
-      <input type="text" class="form-control" name="discord" placeholder="DiscordId">
-      <span class="help-block"><?php echo $discord_err; ?></span>
-      <div class="checkbox mb-3">
+      
       </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Set Discord Id</button>
       <p class="mt-5 mb-3 text-muted"></p>
     </form>
-
+<form class="form-login" action="Email.php" method="get">
+  <label for="Email">Email Adress:</label>
+  <input type="text" id="Email" name="Email"><br><br>
+    <input type="submit" value="Submit">
+</form>
   </div>
 
 
